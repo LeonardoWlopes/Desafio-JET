@@ -1,0 +1,39 @@
+@use "base";
+
+.top-header {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: base.$pumpkin;
+  gap: 16px;
+
+  p {
+    font-size: 0.875rem;
+    color: base.$white;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .divider {
+    height: 50%;
+    width: 1px;
+    background-color: base.$white;
+  }
+}
+
+.header {
+  height: 165px;
+  width: 100%;
+  display: flex;
+  background-color: base.$white;
+  background-color: pink;
+
+  .content {
+    max-width: base.$max-content-width;
+    height: 100%;
+  }
+}

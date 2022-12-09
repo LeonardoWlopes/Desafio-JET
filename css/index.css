@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.top-header {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eda569;
+  gap: 16px;
+}
+.top-header p {
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+.top-header span {
+  font-weight: bold;
+}
+.top-header .divider {
+  height: 50%;
+  width: 1px;
+  background-color: #ffffff;
+}
+
+.header {
+  height: 165px;
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  background-color: pink;
+}
+.header .content {
+  max-width: 1330px;
+  height: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

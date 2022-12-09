@@ -1,0 +1,18 @@
+$font-stack: "Roboto", sans-serif;
+
+// colors
+$yellow: #fcbd24;
+$orange: #ef6b00;
+$gray: #777777;
+$pumpkin: #eda569;
+$white: #ffffff;
+
+//variables
+$max-content-width: 1330px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
