@@ -20,7 +20,7 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eda569;
+  background: #eda56a;
   gap: 16px;
 }
 .top-header p {
@@ -99,6 +99,19 @@ button:active {
   font-size: 12px;
   top: -10px;
   right: -10px;
+}
+
+.main-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffa766;
+  margin-bottom: 75px;
+}
+.main-banner img {
+  width: 100%;
+  max-width: 1920px;
+  max-height: 700px;
 }
 
 /*# sourceMappingURL=index.css.map */
