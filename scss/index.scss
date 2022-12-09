@@ -29,11 +29,77 @@
   height: 165px;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: base.$white;
-  background-color: pink;
 
   .content {
+    width: 100%;
     max-width: base.$max-content-width;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+      color: base.$gray;
+      display: flex;
+      width: 100%;
+
+      ul {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        gap: 45px;
+
+        li,
+        a {
+          color: base.$black;
+          cursor: pointer;
+        }
+
+        li {
+          button {
+            width: 106px;
+            height: 36px;
+            background-color: base.$yellow;
+            border: none;
+            color: base.$white;
+            font-weight: bold;
+            font-size: 16px;
+          }
+
+          .chevron-down {
+            
+          }
+        }
+      }
+    }
+
+    .navigation-icons {
+      display: flex;
+      gap: 25px;
+
+      .icon-wrapper {
+        position: relative;
+
+        .number-asset {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background-color: base.$orange;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          color: base.$white;
+          font-size: 12px;
+          top: -10px;
+          right: -10px;
+        }
+      }
+    }
   }
 }

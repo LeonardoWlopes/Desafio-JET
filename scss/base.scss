@@ -6,6 +6,7 @@ $orange: #ef6b00;
 $gray: #777777;
 $pumpkin: #eda569;
 $white: #ffffff;
+$black: #363636;
 
 //variables
 $max-content-width: 1330px;
@@ -15,4 +16,14 @@ $max-content-width: 1330px;
   padding: 0;
   box-sizing: border-box;
   font-family: $font-stack;
+  text-decoration: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.8;
+  }
 }
