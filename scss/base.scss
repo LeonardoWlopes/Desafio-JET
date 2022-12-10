@@ -22,9 +22,10 @@ $max-content-width: 1330px;
 }
 
 button {
+  user-select: none;
   cursor: pointer;
 
   &:active {
-    opacity: 0.8;
+    opacity: 0.8 important;
   }
 }
