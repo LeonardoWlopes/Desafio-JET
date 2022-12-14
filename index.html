@@ -61,13 +61,13 @@
             <img src="./imgs/Header/wish.png" alt="Coração" />
             <div class="number-asset">1</div>
           </a>
-          <a href="/" class="icon-wrapper">
+          <a onclick="handleOpenAndCloseBag()" class="icon-wrapper">
             <img
               class="cartIcon"
               src="./imgs/Header/cart.png"
               alt="Carrinho de compras"
             />
-            <div class="number-asset">0</div>
+            <div class="number-asset" id="bag-count">0</div>
           </a>
         </div>
       </div>
@@ -127,7 +127,11 @@
                   <span class="full-price">R$ 35,90</span>
                 </div>
 
-                <button>comprar</button>
+                <button
+                  onclick="handleAddItemToBag('afadczdcm7roc73q8wpimuq3y3qzp9y')"
+                >
+                  comprar
+                </button>
               </div>
             </div>
 
@@ -155,7 +159,11 @@
                   <span class="full-price">R$ 35,90</span>
                 </div>
 
-                <button>comprar</button>
+                <button
+                  onclick="handleAddItemToBag('am7roc73q8wr893qzp9y8reqm')"
+                >
+                  comprar
+                </button>
               </div>
             </div>
           </div>
@@ -186,9 +194,14 @@
                   <span class="full-price">R$ 35,90</span>
                 </div>
 
-                <button>comprar</button>
+                <button
+                  onclick="handleAddItemToBag('afadczdcm7roc73q8wpimuq3y3qzp9y')"
+                >
+                  comprar
+                </button>
               </div>
             </div>
+
             <div class="product-column">
               <div class="product-image-container">
                 <img src="imgs/product/product-2.png" alt="product 2" />
@@ -213,7 +226,11 @@
                   <span class="full-price">R$ 35,90</span>
                 </div>
 
-                <button>comprar</button>
+                <button
+                  onclick="handleAddItemToBag('am7roc73q8wr893qzp9y8reqm')"
+                >
+                  comprar
+                </button>
               </div>
             </div>
           </div>
@@ -341,7 +358,8 @@
       </footer>
     </main>
 
-    <div class="newsletter-container">
+    <!-- Newsletter -->
+    <div class="newsletter-container hidden">
       <div class="newsletter">
         <div class="content">
           <div class="head">
@@ -367,7 +385,31 @@
       </div>
     </div>
 
+    <!-- Side Bar -->
+    <div class="side-bar-container hidden">
+      <div class="side-bar">
+        <div class="content">
+          <div class="head">
+            <h3>Minhas sacola</h3>
+            <span onclick="handleOpenAndCloseBag()">x</span>
+          </div>
+
+          <div class="list-container"></div>
+
+          <div class="list-results">
+            <span class="total"></span>
+
+            <button class="button1">continuar comprando</button>
+            <button class="button2" onclick="handleSendBag()">
+              Finalizar compra
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/carrousel.js"></script>
     <script src="js/newsletter.js"></script>
+    <script src="js/bag.js"></script>
   </body>
 </html>

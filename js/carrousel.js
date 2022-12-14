@@ -4,18 +4,27 @@ const mockItems = [
     fullPrice: "R$ 35,90",
     discountPrice: "R$ 18,90",
     image: "imgs/product/product-2.png",
+    id: "am7roc73q8wr893qzp9y8reqm",
+    size: "3m",
+    color: "Misto",
   },
   {
     name: "Morbi condimentum egestas quam - 3m",
     fullPrice: "R$ 35,90",
     discountPrice: "R$ 18,90",
     image: "imgs/product/product-1.png",
+    id: "afadczdcm7roc73q8wpimuq3y3qzp9y",
+    size: "1,5m",
+    color: "Azul",
   },
   {
     name: "Vivamus quam ex, ultricies et blandit sed",
     fullPrice: "R$ 35,90",
     discountPrice: "R$ 18,90",
     image: "imgs/product/product-2.png",
+    id: "am7roc73q8wr893qzp9y8reqm",
+    size: "3m",
+    color: "Misto",
   },
 ];
 
@@ -77,7 +86,7 @@ Array.from(containers).forEach((el) => {
             <span class="full-price">${p.fullPrice}</span>
           </div>
     
-          <button>comprar</button>
+          <button onclick="handleAddItemToBag('${p.id}')">comprar</button>
         </div>
       </div>
       `
