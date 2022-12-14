@@ -380,6 +380,7 @@ main {
   align-items: center;
   width: 100%;
   max-width: 1330px;
+  overflow: hidden;
 }
 .fourth-section .top-border {
   width: 100%;
@@ -529,6 +530,17 @@ footer .brands-container img {
   color: #ffffff;
   background-color: #000000;
 }
+@media screen and (max-width: 785px) {
+  .newsletter-container .newsletter {
+    background-image: none;
+    background-color: #fcbd24;
+    justify-content: center;
+  }
+  .newsletter-container .newsletter .content {
+    align-items: center;
+    width: 100%;
+  }
+}
 
 .side-bar-container {
   width: 100vw;
@@ -542,7 +554,8 @@ footer .brands-container img {
   transition: all 0.5s;
 }
 .side-bar-container .side-bar {
-  width: 410px;
+  width: 100%;
+  max-width: 410px;
   height: 100vh;
   background-color: #ffffff;
   position: fixed;
@@ -623,6 +636,7 @@ footer .brands-container img {
   min-height: 200px;
   position: absolute;
   bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
